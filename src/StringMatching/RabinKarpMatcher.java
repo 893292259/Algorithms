@@ -1,7 +1,7 @@
 package StringMatching;
 
-public class RabinKarpMatcher {
-    public void stringMatching (String t,String p){
+public class RabinKarpMatcher implements StringMatcher{
+    public void matchString (String t,String p){
         int d=0;
         int target=0;
         int i;
@@ -28,6 +28,6 @@ public class RabinKarpMatcher {
         String test = "sddadsddads";
         String target = "sddads";
         RabinKarpMatcher main = new RabinKarpMatcher();
-        main.stringMatching(test,target);
+        main.matchString(test,target);
     }
 }

@@ -3,7 +3,7 @@ package StringMatching;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StringMatchingAutomata {
+public class StringMatchingAutomata implements StringMatcher{
 
     public int[][] preProcess(String p){
         int[][] map = new int[p.length()+1][26];
